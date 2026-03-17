@@ -1,0 +1,25 @@
+[project]
+name = "tuned-lens"
+version = "0.1.0"
+description = "From-scratch Tuned Lens (Belrose et al., 2023) implementation with training and visualization"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Aragorn Wang" },
+]
+dependencies = [
+    "datasets>=4.0.0",
+    "matplotlib>=3.9.0",
+    "torch>=2.4.0",
+    "transformers>=4.40.0,<5",
+    "rich>=13.0.0",
+    "typer>=0.12.0",
+]
+
+[project.urls]
+Repository = "https://github.com/aragorn-w/tuned-lens"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
